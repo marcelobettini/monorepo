@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import games from '../../data/data.json';
+import { data as games } from './data.json';
 
 @Injectable()
 export class GamesService {
-    async getGames() {
+    getGames() {
         return games;
     }
 }
